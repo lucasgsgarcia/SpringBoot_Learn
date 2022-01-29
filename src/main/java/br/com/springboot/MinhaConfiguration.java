@@ -1,12 +1,17 @@
 package br.com.springboot;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
-@Configuration
+@Development
 public class MinhaConfiguration {
 
     @Bean
-    public String appName(){
-        return "Sistema de Carros";
+    public CommandLineRunner executar(){
+        return args -> {
+            System.out.println("Rodando a conf de desenvolvimento");
+        };
     }
+
 }
