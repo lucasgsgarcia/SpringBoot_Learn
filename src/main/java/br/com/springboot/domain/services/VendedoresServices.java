@@ -5,6 +5,7 @@ import br.com.springboot.domain.entity.Vendedor;
 import br.com.springboot.domain.repository.CarrosRepository;
 import br.com.springboot.domain.repository.VendedoresRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,6 +33,7 @@ public class VendedoresServices {
     }
 
     @DeleteMapping("/remover")
+    @PreAuthorize("hasRole('ADMIN')")
     public void deletaVendedor(@RequestBody Vendedor vendedor){
         vendedoresRepository.delete(vendedor);
     }

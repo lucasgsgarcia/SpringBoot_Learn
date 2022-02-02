@@ -3,6 +3,7 @@ package br.com.springboot.domain.services;
 import br.com.springboot.domain.entity.Carro;
 import br.com.springboot.domain.repository.CarrosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,6 +32,7 @@ public class CarrosServices {
     }
 
     @DeleteMapping("/remover")
+    @PreAuthorize("hasRole('ADMIN')")
     public void deletaCarros(@RequestBody Carro carro){
         carrosRepository.delete(carro);
     }
