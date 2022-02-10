@@ -1,11 +1,14 @@
 # SpringBoot_Learn
-Projeto simples para praticar Spring e futuramente um JUnit tbm xD
+Projeto simples para praticar Spring
 
-Em desenvolvimento...
+Pré-finalizado
 
 O objetivo desse projeto é única e exclusivamente aprendizado.
-Nesse projeto eu desejo realizar toda a estrutura back-end de uma aplicação, com conexão a database e regras de negócio bem formuladas.
+
+Esse projeto já é uma API REST. Para sua contrução, segui alguns cursos tanto teóricos como práticos.
+É uma estrutura back-end construída totalmente utilizando Spring. Utilizei também algumas ferramentas, que também
+puderam somar no meu aprendizado, como por exemplo o Lombok.
 
 Em breve, em outro projeto, pretendo criar também o front-end em React. (Full stack)
 
-> Keywords: Java; Spring boot; Spring Security; Spring Framework; Lombok; PostgreSQL; Database; Authentication; Hibernate; Postman;
+> Keywords: Java; Spring boot; Spring Security; Spring Framework; Lombok; PostgreSQL; Database; Authentication; Hibernate; Postman; API REST;
