@@ -16,5 +16,3 @@ Diagrama do banco. Sem marcações de relações:
 
 Em breve, em outro projeto, pretendo criar também o front-end em React. (Full stack)
 </div>
-
-> Keywords: Java; Spring boot; Spring Security; Spring Framework; Lombok; PostgreSQL; Database; Authentication; Hibernate; Postman; API REST;
